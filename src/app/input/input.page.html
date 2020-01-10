@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Nombre: {{nombre || 'No hay nombre'}}</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">
+        Nombre
+      </ion-label>
+      <ion-input type="text"  [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  </ion-list>
+  <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Inicio Sesion: {{formulario.valid}}</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">
+        Email
+      </ion-label>
+      <ion-input type="Email"  [(ngModel)]="usuario.email" required name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Contraseña
+      </ion-label>
+      <ion-input type="Password"  [(ngModel)]="usuario.pass" required name="pass"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button type="submit" expand="full">
+    Enviar
+  </ion-button>
+  </form>
+</ion-content>

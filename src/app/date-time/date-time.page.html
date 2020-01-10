@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>DateTime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-datetime displayFormat="YYYY MMM DD" max="2020-01-01" min="2010-01-01" placeholder="Ingrese una fecha" [(ngModel)]="fecha" (ionChange)="onFecha(fecha)"></ion-datetime>
+  </ion-item>
+</ion-content>

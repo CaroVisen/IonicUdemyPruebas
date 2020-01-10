@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+      <ion-title>Avatar</ion-title>
+    </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+  <ion-chip color="success">
+    <ion-avatar>
+        <img src="https://pulpfictioncine.com/download/multimedia.normal.8239579a3a783434.73706f6e6765626f625f6e6f726d616c2e6a7067.jpg">
+    </ion-avatar>
+    <ion-label>Bob</ion-label>
+  </ion-chip>
+  <ion-chip>
+      <ion-avatar>
+          <img src="https://pulpfictioncine.com/download/multimedia.normal.8239579a3a783434.73706f6e6765626f625f6e6f726d616c2e6a7067.jpg">
+      </ion-avatar>
+      <ion-label>Bob</ion-label>
+    </ion-chip>
+  <ion-list>
+    <ion-item *ngFor="let i of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+      <ion-avatar slot="start">
+        <img src="https://pulpfictioncine.com/download/multimedia.normal.8239579a3a783434.73706f6e6765626f625f6e6f726d616c2e6a7067.jpg">
+      </ion-avatar>
+      <ion-label>Bob</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
