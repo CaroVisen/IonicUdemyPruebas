@@ -11,18 +11,10 @@ const routes: Routes = [
   { path: 'fab', loadChildren: () => import('./fab/fab.module').then( m => m.FabPageModule)},
   { path: 'grid', loadChildren: () => import('./grid/grid.module').then( m => m.GridPageModule)},
   { path: 'input', loadChildren: () => import('./input/input.module').then( m => m.InputPageModule)},
-  {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
-  },
-  {
-    path: 'list-reorder',
-    loadChildren: () => import('./list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
-  },  {
-    path: 'loading',
-    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
-  },
-
+  { path: 'list', loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)},
+  { path: 'list-reorder', loadChildren: () => import('./list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)},
+  { path: 'loading', loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)},
+  { path: 'modal', loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)},
 ];
 
 @NgModule({
