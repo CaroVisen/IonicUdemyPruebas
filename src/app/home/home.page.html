@@ -1,5 +1,10 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>
       Ionic Blank
     </ion-title>
@@ -33,5 +38,8 @@
   </ion-button>
   <ion-button expand="full" color="success" shape="round" routerLink="/list-reorder">
     Ir ListReorder
+  </ion-button>
+  <ion-button expand="full" color="success" shape="round" routerLink="/loading">
+    Ir Loading
   </ion-button>
 </ion-content>  
